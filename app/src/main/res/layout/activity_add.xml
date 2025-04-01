@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textViewPackYourBag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/wave2"
+        android:text="Travel with me!!"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView -->
+
+    <Button
+        android:id="@+id/playbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Play Quiz!!"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="97dp"
+        android:backgroundTint="@color/purple_700"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewPackYourBag"
+        android:layout_marginTop="-349dp"
+        android:paddingTop="16dp" />
+    <com.tugaybakay.travelpartner.CompassView
+        android:id="@+id/compassView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/recyclerView"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

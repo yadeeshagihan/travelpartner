@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="match_parent"
+        android:layout_height="642dp"
+        android:src="@drawable/app_icon_two" />
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add some note! I remember everything!"
+        android:layout_below="@+id/appIcon"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"/>
+</RelativeLayout>
